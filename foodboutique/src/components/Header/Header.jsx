@@ -1,13 +1,15 @@
+import { NavLink } from "react-router-dom"
+
 export const Header = () => {
   return (
-    <div>
+    <header>
       <div>
-        <a href="/">Food Boutique</a>
+        <NavLink to="/">Food Boutique</NavLink>
         <nav>
-          <a href="/">Home</a>
-          <a href="/">Cart</a>
+          <NavLink to='/'>Home</NavLink>
+          <NavLink to='/cart'>Cart</NavLink>
         </nav>
       </div>
-    </div>
+    </header>
   )
 }
